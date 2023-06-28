@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- font -->
+  <link rel="preconnect" href="https://fonts.googleapis.com"/>
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
+  <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@400;500&display=swap" rel="stylesheet"/>
+  <!-- css -->
+  <link rel="stylesheet" href="./assets/css/main.css"/>
+  <!-- icons -->
+  <script src="https://unpkg.com/@phosphor-icons/web"></script>
+  <title>Calculo IMC</title>
+</head>
+<body>
+  <div class="container">
+    <section class="main-header">
+      <i class="ph ph-pulse"></i>
+      <h1>Calculo IMC</h1>
+      <i class="ph ph-info"></i>
+    </section>
+    <section class="container-table">
+      <h2>Tabela de interpretação do IMC</h2>
+      <div class="containers-table">
+        <div class="containers">
+          <h3>IMC</h3>
+          <ul class="list-obesity">
+            <li>Menor que 18.5</li>
+            <li>Maior que 18.5</li>
+            <li>Maior que 24,9</li>
+            <li>Maior que 29.9</li>
+            <li>Maior que 34.9</li>          
+            <li>Maior que 39.9</li>
+          </ul>
+        </div>
+        <div class="containers">
+          <h3>Classificação</h3>
+          <ul class="list-obesity">
+            <li>Abaixo do peso</li>
+            <li>Peso normal</li>
+            <li>Sobrepeso</li>
+            <li>Obesidade grau 1</li>
+            <li>Obesidade grau 2</li>
+            <li>Obesidade grau 3</li>
+          </ul>
+        </div>
+        <div class="containers">
+          <h3>Obesidade(grau)</h3>
+          <ul class="list-obesity">
+            <li>0</li>
+            <li>0</li>
+            <li>0</li>
+            <li>I</li>
+            <li>II</li>
+            <li>III</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+    <section class="container-text">
+      <p>
+        IMC é a sigla para Índice de Massa Corpórea, que calcula o peso ideal de cada pessoa. Diz-se que 
+        o indivíduo tem peso normal quando o resultado do IMC está entre <strong>18,5 e 24,9</strong>.
+      </p>
+
+      <p>
+        Quer descobrir seu IMC? Insira seu peso e sua altura nos campos abaixo e compare com os índices da tabela. Importante: siga os exemplos e use pontos como separadores.
+      </p>
+    </p>
+    </section>
+
+    <section class="form">
+      <form action="/" id="form" method="post">
+        <input type="text" id="peso" name="peso" placeholder="digite seu peso"/>
+        <input type="text" id="altura" name="altura" placeholder="digite sua altura"/>
+        
+        <button type="submit">ENVIAR</button>
+      </form>
+
+      <div id="resultado"></div>
+    </section>
+  </div>
+  <script src="./assets/js/main.js"></script>
+</body>
+</html>

@@ -1,0 +1,88 @@
+/* ==========RESET========== */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #0A0C10;
+  color: #F0F3F6;
+  font-size: 16px;
+  font-weight: 700;
+  font-family: 'Roboto', sans-serif;
+}
+
+input {
+  font-family: 'Roboto', sans-serif;
+  border: none;
+  outline: none;
+  font-size: 16px;
+  padding: 5px 10px;
+  border-radius: 6px;
+  font-weight: 500;
+  color: #0A0C10;
+}
+
+input::placeholder {
+  color: #7A828E;
+  font-weight: 400;
+}
+
+/* ==========CONTAINER========== */
+.container {
+  background-color: #7A828E;
+  padding: 20px;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  margin: auto 50px;
+}
+.container h1 {
+  text-transform: capitalize;
+  letter-spacing: 2px;
+  font-weight: 500;
+}
+
+.container form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+
+.container form input {
+  width: 400px;
+}
+
+.container form button {
+  padding: 5px 10px;
+  font-size: 16px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  border: none;
+  transition: all 0.4s ease-in-out;
+  border: 1px solid #F0F3F6;
+  background-color: #F0F3F6;
+  border-radius: 5px;
+}
+
+.container form button:hover {
+  border: 1px solid #F0F3F6;
+  background-color: #7A828E;
+  color: #F0F3F6;
+}
+
+.container .resultado {
+  letter-spacing: 1px;
+ font-size: 20px;
+}
